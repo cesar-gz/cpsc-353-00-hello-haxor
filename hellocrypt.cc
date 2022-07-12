@@ -38,7 +38,8 @@ int main(int argc, char const* argv[]) {
 
   if (argc < 3) {
     std::cout << "Please provide two arguments.\n"; 
-    std::cout << "The first argument is the salt defined as two ASCII characters.\n";
+    std::cout << "The first argument is the salt defined as two ";
+    std::cout << "ASCII characters.\n";
     std::cout << "The second argument is a word you'd like to encrypt.\n";
     std::cout << "Exiting.\n";
     return 1;
