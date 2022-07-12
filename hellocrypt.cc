@@ -1,10 +1,10 @@
-// Tuffy Titan
-// CPSC 353-01
-// 2021-06-04
-// tuffy.titan@csu.fullerton.edu
-// @tuffytitan
+// Cesar Gutierrez
+// CPSC 353-02
+// 2022-07-12
+// cesarg7@csu.fullerton.edu
+// @cesar-gz
 //
-// Assignment 00
+// Lab 00-00
 //
 // Demonstrate the traditional use of crypt.
 //
@@ -40,6 +40,7 @@
 
 int main(int argc, char const* argv[]) {
 
+  /*
   if(argc < 3){
     std::cout << "You need to provide two arguments.\n";
     std::cout << "The first is the password\n";
@@ -51,12 +52,13 @@ int main(int argc, char const* argv[]) {
   for(int i = 0; i < argc; i++){
     std::cout << i << " : " << argv[i] << "\n";
   }
-
-  //char *crypted_text = crypt("foo", "aa");
-  //std::cout << crypted_text << "\n";
-
-  char *crypted_text = crypt(argv[1], argv[2]);
+  
+  char *crypted_text = crypt("foo", "aa");
   std::cout << crypted_text << "\n";
+  */
+
+  char* crypted_text = crypt(argv[1], argv[2]);
+  std::cout << "The cipher text is \"" << crypted_text << "\"\n";
 
   return 0;
 }
