@@ -41,21 +41,19 @@
 int main(int argc, char const* argv[]) {
 
   /*
-  if(argc < 3){
-    std::cout << "You need to provide two arguments.\n";
-    std::cout << "The first is the password\n";
-    std::cout << "The second is the salt expressed as two letters.\n";
-    return 1;
-  }
-
   std::cout << "I have " << argc << " number of arguments.\n";
   for(int i = 0; i < argc; i++){
     std::cout << i << " : " << argv[i] << "\n";
   }
-  
-  char *crypted_text = crypt("foo", "aa");
-  std::cout << crypted_text << "\n";
   */
+
+  if (argc < 3) {
+    std::cout << "Please provide two arguments.\n"; 
+    std::cout << "The first argument is the salt defined as two ASCII characters.\n";
+    std::cout << "The second argument is a word you'd like to encrypt.\n";
+    std::cout << "Exiting.\n";
+    return 1;
+  }
 
   char* crypted_text = crypt(argv[1], argv[2]);
   std::cout << "The cipher text is \"" << crypted_text << "\"\n";
