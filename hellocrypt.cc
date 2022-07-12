@@ -35,5 +35,10 @@
 /// the cipher text.
 int main(int argc, char const* argv[]) {
 
+  if(argc < 3){
+    std::cout << "not enough arguments!\n";
+    exit(1);
+  }
+
   return 0;
 }
