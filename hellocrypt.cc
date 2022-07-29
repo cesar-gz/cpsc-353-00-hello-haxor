@@ -44,7 +44,7 @@ int main(int argc, char const* argv[]) {
     return 1;
   }
 
-  char* crypted_text = crypt(argv[1], argv[2]);
+  char* crypted_text = crypt(argv[2], argv[1]);
   std::cout << "The cipher text is \"" << crypted_text << "\"\n";
 
   return 0;
